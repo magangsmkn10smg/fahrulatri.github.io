@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" rel="stylesheet">
+</head>
+
+<title>Centered Title and Image Gallery</title>
+<style>
+    .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 100vh;
+    }
+    .iframe-container {
+        position: relative;
+        padding-bottom: 56.25%; /* 16:9 aspect ratio */
+        height: 0;
+        overflow: hidden;
+    }
+
+    .iframe-container iframe {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    input[type="email"],
+    textarea {
+        background-color: #111827; /* Warna latar belakang yang kontras dengan teks */
+        color: #FFFFFF; /* Warna teks */
+        border: 1px solid #6B7280; /* Warna border */
+        padding: 0.5rem; /* Padding untuk elemen input dan textarea */
+        width: 100%; 
+    }
+</style>
+</head>
+<body class="bg-gray-800 text-white">
+    <div class="container mx-auto text-center mt-8">
+        <img src="z.jpeg" alt="Profile Picture" class="rounded-full w-32 h-32 md:w-48 md:h-48 lg:w-64 lg:h-64 mx-auto">
+        <h1 class="text-2xl md:text-3xl lg:text-4xl font-semibold mt-4">Atri Fahrul</h1>
+        <p class="text-gray-400 mt-2">"Just someone who feels bored and wants to share their boredom's results on this website."</p>
+    </div>
+    <br>
+    <div class="center">
+        <div class="text-center mt-8">
+            <h2 class="text-xl font-semibold mb-2">Photography</h2>
+            <p class="text-gray-400 mb-4">"When I'm bored, I like to take photos of random objects around me."</p>
+            <div  class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+                <img src="p1.jpeg" alt="Image 1" class="rounded-lg max-h-60 mx-auto">
+                <img src="p2.jpeg" alt="Image 2" class="rounded-lg max-h-60 mx-auto">
+                <img src="p3.jpeg" alt="Image 3" class="rounded-lg max-h-60 mx-auto">
+                <img src="p4.jpeg" alt="Image 4" class="rounded-lg max-h-60 mx-auto">
+                <img src="p5.jpeg" alt="Image 5" class="rounded-lg max-h-60 mx-auto">
+                <img src="p6.jpeg" alt="Image 6" class="rounded-lg max-h-60 mx-auto">
+                <img src="p7.jpeg" alt="Image 7" class="rounded-lg max-h-60 mx-auto">
+                <img src="p8.jpeg" alt="Image 8" class="rounded-lg max-h-60 mx-auto">
+                <img src="p10.jpeg" alt="Image 9" class="rounded-lg max-h-60 mx-auto md:col-span-2 lg:col-span-1">
+            </div>
+            <br>
+            <div class="mt-6">
+                <h3 class="text-xl font-semibold mb-2">Featured Project</h3>
+                <p class="text-gray-400 mb-4">"When I'm interning, me and the team are assigned to create a website by my supervising teacher."</p>
+                <a href="http://magangsmkn10.rf.gd/coba3.html" class="inline-block bg-blue-500 text-white px-4 py-2 rounded-lg hover:bg-blue-600">Go to Website</a>
+            </div>
+            <br>
+            <div class="mt-8">
+                <h3 class="text-xl font-semibold mb-2">Watch My Video</h3>
+                <p class="text-gray-400 mb-4">"When I feel bored, I create videos and upload them to YouTube."</p>
+                <div class="iframe-container">
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/0ZDkrrA4C1k" frameborder="0" allowfullscreen></iframe>
+                </div>
+                <br>
+                <div class="mt-8">
+                    <h3 class="text-xl font-semibold mb-2">Contact Me</h3>
+                    <p class="text-gray-400 mb-4">Have questions or want to get in touch? Feel free to send me a message!</p>
+                    <form action="https://formspree.io/f/xwkdlpgy" method="POST">
+                        <label class="block mb-2">
+                            Your email:
+                            <input type="email" name="email" class="block w-full border rounded p-2">
+                        </label>
+                        <label class="block mb-4">
+                            Your message:
+                            <textarea name="message" class="block w-full border rounded p-2 h-24"></textarea>
+                        </label>
+                        <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Send</button>
+                    </form>
+                </div>
+                <footer class="text-center mt-8 py-4 border-t border-gray-600">
+                    <div class="flex flex-wrap justify-center">
+                     <a href="https://wa.me/6288902969417" target="_blank" class="mr-4 text-gray-400 hover:text-white">
+                        <i class="fab fa-whatsapp text-xl"></i>
+                    </a>
+                    <a href="https://www.instagram.com/mefahrul/?utm_source=qr&igshid=MzNlNGNkZWQ4Mg%3D%3D" target="_blank" class="mr-4 text-gray-400 hover:text-white">
+                        <i class="fab fa-instagram text-xl"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCm90KRgrA78LeP8LGVcORqg" target="_blank" class="text-gray-400 hover:text-white">
+                        <i class="fab fa-youtube text-xl"></i>
+                    </a>
+                </div>
+                <p class="text-gray-400">&copy; 2023 atrifahrul. All rights reserved.</p>
+            </footer>
+        </div>
+    </div>
+
+
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
