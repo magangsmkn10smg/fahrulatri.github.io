@@ -1,0 +1,200 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Dark Website</title>
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        body {
+            background-color: #121212;
+            color: #ffffff;
+        }
+
+        .navbar-footer {
+            background-color: #121212;
+        }
+
+        .content-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center;
+        }
+
+        .icon-container {
+            display: flex;
+            justify-content: center;
+            margin-top: 1rem;
+        }
+
+        .feature-container {
+            margin-top: 2rem;
+            text-align: center;
+        }
+
+        .feature-description {
+            margin-top: 1rem;
+            border: 2px solid #1f1f1f;
+            padding: 1rem;
+            border-radius: 0.5rem;
+        }
+        .feature-container {
+            margin-top: 2rem;
+            text-align: center;
+            position: relative;
+        }
+
+        .feature-description {
+            margin-top: 1rem;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            border: 2px solid #1f1f1f;
+        }
+
+        .feature-description:hover {
+            border-color: #3182ce;
+        }
+
+        .feature-description a {
+            color: inherit;
+            text-decoration: none;
+        }
+
+        .feature-description a:hover {
+            text-decoration: underline;
+        }
+    </style>
+    <script>
+        function toggleDropdown() {
+            var dropdown = document.getElementById("dropdown-menu");
+            dropdown.classList.toggle("hidden");
+        }
+    </script>
+</head>
+<body>
+    <nav class="navbar-footer p-4 flex justify-between items-center">
+        <div class="text-white text-xl font-semibold lg:text-2xl mr-4">atrifahrul.</div>
+        <div class="relative">
+            <button class="text-white" onclick="toggleDropdown()">
+                <i class="fas fa-bars text-xl"></i>
+            </button>
+            <div id="dropdown-menu" class="hidden absolute right-0 mt-2 w-32 bg-black border rounded shadow-md">
+                <a href="index.html" class="block px-4 py-2 text-white hover:bg-gray-800">Home</a>
+                <a href="index1.html" class="block px-4 py-2 text-white hover:bg-gray-800">More</a>
+            </div>
+        </div>
+    </nav>
+    <div class="container mx-auto px-4 py-8 sm:px-6 lg:px-8">
+        <div class="max-w-4xl mx-auto">
+            <div class="content-container">
+                <img src="z.jpeg" alt="My Photo" class="mx-auto w-32 h-32 rounded-full">
+                <h1 class="text-2xl font-bold mt-2 lg:text-3xl">Hello I'm Atri Fahrul.</h1>
+                <p class="mt-1 lg:text-lg xl:text-xl text-gray-300">Just someone who's bored and wants to share their boredom on this website. </p>
+            </div>
+            <div class="icon-container mt-4">
+                <a href="https://wa.me/6288902969417" class="text-green-500 hover:text-green-700 mx-2">
+                    <i class="fab fa-whatsapp text-3xl"></i>
+                </a>
+                <a href="https://www.instagram.com/mefahrul/" class="text-pink-500 hover:text-pink-700 mx-2">
+                    <i class="fab fa-instagram text-3xl"></i>
+                </a>
+                <a href="https://www.youtube.com/channel/UCm90KRgrA78LeP8LGVcORqg" class="text-red-500 hover:text-red-700 mx-2">
+                    <i class="fab fa-youtube text-3xl"></i>
+                </a>
+                <a href="https://github.com/fahrulatri" class="text-gray-500 hover:text-gray-700 mx-2">
+                    <i class="fab fa-github text-3xl"></i>
+                </a>
+            </div>
+            <div class="border-t my-8"></div>
+            <div class="feature-container">
+                <h2 class="text-xl font-semibold lg:text-2xl xl:text-3xl">Skills</h2>
+                <p class="lg:text-lg xl:text-xl text-gray-300">
+                    Here are some of my skills and expertise:
+                    Capturing moments through the lens, Turning ideas into functional websites, Polishing and enhancing visuals for a captivating experience.
+                </p>
+                <div class="mt-4">
+                    <div class="mb-3 flex justify-between items-center">
+                        <span class="text-gray-300">Photography</span>
+                        <span class="text-blue-500 text-xs">50%</span>
+                    </div>
+                    <div class="relative h-2 bg-gray-600 rounded-full">
+                        <div class="absolute h-full bg-blue-500 rounded-full" style="width: 50%;"></div>
+                    </div>
+                    <div class="mb-3 mt-4 flex justify-between items-center">
+                        <span class="text-gray-300">Coding</span>
+                        <span class="text-blue-500 text-xs">25%</span>
+                    </div>
+                    <div class="relative h-2 bg-gray-600 rounded-full">
+                        <div class="absolute h-full bg-blue-500 rounded-full" style="width: 25%;"></div>
+                    </div>
+                    <div class="mb-3 mt-4 flex justify-between items-center">
+                        <span class="text-gray-300">Editing</span>
+                        <span class="text-blue-500 text-xs">15%</span>
+                    </div>
+                    <div class="relative h-2 bg-gray-600 rounded-full">
+                        <div class="absolute h-full bg-blue-500 rounded-full" style="width: 15%;"></div>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t my-8"></div>
+            <div class="feature-container">
+                <h2 class="text-xl font-semibold lg:text-2xl xl:text-3xl">Featured Project</h2>
+                <a href="http://magangsmkn10.rf.gd/coba3.html#" target="_blank" class="block hover:border-blue-500 hover:border-b-2 hover:border-solid">
+                    <div class="feature-description">
+                        <p class="lg:text-lg xl:text-xl text-gray-300">
+                            Check out my latest project "magangsmkn10.rf.gd". It's all about [project website magang].
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="border-t my-8"></div>
+            <div class="feature-container">
+                <h2 class="text-xl font-semibold lg:text-2xl xl:text-3xl">Photography</h2>
+                <p class="lg:text-lg xl:text-xl text-gray-300">Explore some of my favorite snapshots captured through the lens. Feel the beauty of moments frozen in time.</p>
+                <div class="flex overflow-x-auto mt-4">
+                    <img src="p1.jpeg" alt="Image 1" class="w-32 h-32 mx-2 rounded-lg">
+                    <img src="p2.jpeg" alt="Image 1" class="w-32 h-32 mx-2 rounded-lg">
+                    <img src="p3.jpeg" alt="Image 1" class="w-32 h-32 mx-2 rounded-lg">
+                    <img src="p4.jpeg" alt="Image 1" class="w-32 h-32 mx-2 rounded-lg">
+                    <img src="p5.jpeg" alt="Image 1" class="w-32 h-32 mx-2 rounded-lg">
+                    <img src="p6.jpeg" alt="Image 1" class="w-32 h-32 mx-2 rounded-lg">
+                    <img src="p7.jpeg" alt="Image 1" class="w-32 h-32 mx-2 rounded-lg">
+                    <img src="p8.jpeg" alt="Image 1" class="w-32 h-32 mx-2 rounded-lg">
+                    <img src="p10.jpeg" alt="Image 1" class="w-32 h-32 mx-2 rounded-lg">
+                </div>
+            </div>
+            <div class="border-t my-8"></div>
+            <div class="feature-container">
+                <h2 class="text-xl font-semibold lg:text-2xl xl:text-3xl">Watch My Video</h2>
+                <p class="lg:text-lg xl:text-xl text-gray-300">Check out my YouTube video where I share some interesting insights on my latest project.</p>
+                <div class="mt-4 flex justify-center">
+                    <iframe width="100%" height="415" src="https://www.youtube.com/embed/0ZDkrrA4C1k" title="Featured Video" frameborder="0" allowfullscreen></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<footer class="navbar-footer py-4 text-white text-center">
+    <div class="flex justify-center items-center mb-2">
+        <div class="mr-2">
+        </div>
+        <div>
+            <span class="font-semibold text-xl">atrifahrul.</span>
+            <span class="text-gray-300">| &copy; 2023 All rights reserved</span>
+        </div>
+    </div>
+    <div class="mb-2">
+        <a href="index.html" class="text-gray-300 hover:text-white mr-4">Home</a>
+        <a href="index1.html" class="text-gray-300 hover:text-white">More</a>
+    </div>
+    <div class="mb-2">
+        <span class="text-gray-300">Created by Atri Fahrul</span>
+    </div>
+    <div>
+        <p class="text-gray-300">Thank you for visiting!</p>
+    </div>
+</footer>
+</body>
+</html>
